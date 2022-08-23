@@ -1,0 +1,32 @@
+// Sass variable overrides must be declared before loading up Active Admin's styles.
+//
+// To view the variables that Active Admin provides, take a look at
+// `app/assets/stylesheets/active_admin/mixins/_variables.scss` in the
+// Active Admin source.
+//
+// For example, to change the sidebar width:
+// $sidebar-width: 242px;
+
+$panelBorder: #3ce79d;
+$skinActiveColor: #30ac177a;
+$bodyColor: #1ec0e97a;
+$skinBlack: #314e4f;
+$panelHeaderBck: rgba(172, 126, 10, 0.658);
+$skinBlackLight: #cae275;
+$textGray: #3b92b5;
+$skinTextColor: #1a5a8c;
+$skinTextActiveColor: #d14d4d;
+$skinTextTable: #35b2ba;
+$skinHeaderBck: #6e3867;
+
+// Active Admin's got SASS!
+@import "active_admin/mixins";
+@import "active_admin/base";
+
+// Overriding any non-variable Sass must be done after the fact.
+// For example, to change the default status-tag color:
+//
+//   .status_tag { background: #6090DB; }
+@import "active_admin_flat_skin";
+
+@import "font-awesome";
